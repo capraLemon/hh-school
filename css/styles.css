@@ -9,7 +9,6 @@
 .body-background {
   font-family: Arial;
   background: rgba(0, 173, 95, 0.8);
-  background: -webkit-gradient(linear, left top, left bottom, from(#0e81d6), to(rgba(0, 173, 95, 0.8))), url('../images/main-background.jpg');
   background: -webkit-linear-gradient(top, #0e81d6, rgba(0, 173, 95, 0.8)), url('../images/main-background.jpg');
   background: -o-linear-gradient(top, #0e81d6, rgba(0, 173, 95, 0.8)), url('../images/main-background.jpg');
   background: linear-gradient(180deg, #0e81d6, rgba(0, 173, 95, 0.8)), url('../images/main-background.jpg');
@@ -228,7 +227,6 @@
   outline-offset: 0;
   z-index: 1;
 }
-
 .contact-form-item__user-info_name:focus {
   height: 55px;
   width: 50%;
