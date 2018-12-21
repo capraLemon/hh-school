@@ -38,21 +38,36 @@
                 <fieldset class="contact-form-item">
                     <legend class="contact-form-item__legend">укажите фамилию и имя</legend>
                     <div class="contact-form-item_name">
-                        <input class="contact-form-item__user-info_name" type="text" id="user-name" name="user-name" placeholder="Имя">
-                        <input class="contact-form-item__user-info_name" type="text" id="user-surname" name="user-surname" placeholder="Фамилия">
+                        <div class="contact-form-item__animation-husk_name">
+                            <input class="contact-form-item__user-info" type="text" id="user-name" name="user-name" placeholder="Имя">
+                            <label class="contact-form-item__animation-border" for="user-name"></label>
+                        </div>
+                        <div class="contact-form-item__animation-husk_name">
+                            <input class="contact-form-item__user-info" type="text" id="user-surname" name="user-surname" placeholder="Фамилия">
+                            <label class="contact-form-item__animation-border" for="user-surname"></label>
+                        </div>
                     </div>
                 </fieldset>
                 <fieldset class="contact-form-item">
                     <legend class="contact-form-item__legend">адрес электронной почты</legend>
-                    <input class="contact-form-item__user-info" type="text" id="user-email" name="user-email" placeholder="example@email.com">
+                    <div class="contact-form-item__animation-husk">
+                        <input class="contact-form-item__user-info" type="text" id="user-email" name="user-email" placeholder="example@email.com">
+                        <label class="contact-form-item__animation-border" for="user-email"></label>
+                    </div>
                 </fieldset>
                 <fieldset class="contact-form-item">
                     <legend class="contact-form-item__legend">номер телефона</legend>
-                    <input class="contact-form-item__user-info" type="text" id="user-phone_number" name="user-phone_number" placeholder="+7 800 000000">
+                    <div class="contact-form-item__animation-husk">
+                        <input class="contact-form-item__user-info" type="text" id="user-phone_number" name="user-phone_number" placeholder="+7 800 000000">
+                        <label class="contact-form-item__animation-border" for="user-phone_number"></label>
+                    </div>
                 </fieldset>
                 <fieldset class="contact-form-item">
                     <legend class="contact-form-item__legend">сообщение</legend>
-                    <textarea class="contact-form-item__user-info" id="text-area" name="text-area"></textarea>
+                    <div class="contact-form-item__animation-husk">
+                        <textarea class="contact-form-item__user-info" id="text-area" name="text-area"></textarea>
+                        <label class="contact-form-item__animation-border" for="text-area"></label>
+                    </div>
                 </fieldset>
                 <div class="contact-form-item">
                     <button class="contact-form-item__send-button">отправить сообщение</button>

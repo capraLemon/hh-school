@@ -167,8 +167,8 @@
 }
 @media (max-width: 768px) {
   .contact-form {
-    height: 740px;
-    width: 100%;
+  	height: 740px;
+  	width: 100%;
     padding: 55px 30px 55px 30px;
   }
 }
@@ -196,51 +196,38 @@
   font-family: Poppins-Regular, Arial;
   font-size: 18px;
   color: #666;
-  height: 55px;
+  height: 100%;
   width: 100%;
   padding-left: 25px;
-  outline: 1px solid transparent;
-  outline-offset: 25px;
-  -webkit-transition: outline-offset 0.4s;
-  -o-transition: outline-offset 0.4s;
-  transition: outline-offset 0.4s;
-  border: 0.1px solid #e4e4e4;
 }
-.contact-form-item__user-info_name {
-  font-family: Poppins-Regular, Arial;
-  font-size: 18px;
-  color: #666;
-  height: 55px;
-  width: 50%;
-  padding-left: 25px;
-  outline: 1px solid transparent;
-  outline-offset: 25px;
-  -webkit-transition: outline-offset 0.4s;
-  -o-transition: outline-offset 0.4s;
-  transition: outline-offset 0.4s;
-  border: 0.1px solid #e4e4e4;
-}
-.contact-form-item__user-info:focus {
+.contact-form-item__animation-husk {
   height: 55px;
   width: 100%;
-  outline: 1px solid #00ad5f;
-  outline-offset: 0;
-  z-index: 1;
+  position: relative;
 }
-.contact-form-item__user-info_name:focus {
+.contact-form-item__animation-husk_name {
   height: 55px;
   width: 50%;
-  outline: 1px solid #00ad5f;
-  outline-offset: 0;
-  z-index: 1;
+  position: relative;
 }
-@media (max-width: 576px) {
-  .contact-form-item__user-info_name {
-    width: 100%;
-  }
-  .contact-form-item__user-info_name:focus {
-    width: 100%;
-  }
+.contact-form-item__animation-border {
+  color: #00ad5f;
+  height: 55px;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.2, 2);
+}
+.contact-form-item__user-info:focus + .contact-form-item__animation-border {
+  border: 1px solid #00ad5f;
+  z-index: 1;
+  transform: translate(-50%, -50%) scale(1);
 }
 .contact-form-item__legend {
   font-size: 12px;
@@ -265,6 +252,9 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+  }
+  .contact-form-item__animation-husk_name {
+    width: 100%;
   }
 }
 .contact-form-item__send-button {
